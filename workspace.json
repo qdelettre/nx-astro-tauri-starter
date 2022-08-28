@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "src_tauri": "apps/platform/src-tauri",
+    "web-my-app": "apps/web/my-app",
+    "web-my-app-e2e": "apps/web/my-app-e2e"
+  },
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json"
+}

@@ -1,0 +1,30 @@
+{
+  "npmScope": "nx-astro-tauri",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e", "check"],
+        "accessToken": "ZTYxOGZhNGUtZGZjMi00NmFjLWE4YWEtNDdkMmY4M2JiM2Q0fHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
+    }
+  },
+  "plugins": ["@nxtensions/astro"],
+  "defaultProject": "web-my-app"
+}

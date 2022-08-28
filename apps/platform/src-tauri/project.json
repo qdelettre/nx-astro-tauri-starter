@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/platform/src-tauri/src",
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "npm run tauri dev"
+          }
+        ]
+      }
+    },
+    "build": {
+      "dependsOn": [{ "projects": "dependencies", "target": "build" }],
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "npm run tauri build"
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nxrs/cargo:clippy",
+      "options": {
+        "fix": false,
+        "failOnWarnings": true,
+        "noDeps": true
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["web-my-app"]
+}
