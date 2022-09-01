@@ -7,7 +7,7 @@
     "distDir": "../../../dist/apps/web/my-app"
   },
   "package": {
-    "productName": "tauri-astro-solidjs",
+    "productName": "nx-astro-tauri-starter",
     "version": "0.1.0"
   },
   "tauri": {
@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.nx-astro-tauri-starter.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
