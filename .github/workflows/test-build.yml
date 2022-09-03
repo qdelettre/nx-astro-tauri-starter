@@ -4,7 +4,7 @@ on: [pull_request]
 jobs:
   test-tauri:
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         platform: [macos-latest, ubuntu-22.04, windows-latest]
 
@@ -24,8 +24,10 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libgtk-3-dev webkit2gtk-4.0 libappindicator3-dev librsvg2-dev patchelf
-      - name: install app dependencies and build it
-        run: npm ci --force && npm run build
+
+      - name: install dependencies
+        run: npm ci -f
+
       - uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
