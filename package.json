@@ -15,7 +15,7 @@
     "@nrwl/cypress": "14.6.5",
     "@nrwl/eslint-plugin-nx": "14.6.5",
     "@nrwl/linter": "14.6.5",
-    "@nrwl/nx-cloud": "14.6.1",
+    "@nrwl/nx-cloud": "14.6.2",
     "@nrwl/workspace": "14.6.5",
     "@nxtensions/astro": "2.3.0",
     "@tauri-apps/cli": "1.0.5",
