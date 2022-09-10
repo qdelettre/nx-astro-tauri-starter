@@ -24,13 +24,13 @@
   // "forwardPorts": [],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": ". ${NVM_DIR}/nvm.sh",
+  "postCreateCommand": "bash -i -c 'nvm install && npm install -g @nrwl/cli'",
 
   // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "vscode",
   "features": {
     "node": {
-        "version": "none"
+      "version": "none"
     }
   }
 }
