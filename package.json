@@ -18,7 +18,7 @@
     "@nrwl/nx-cloud": "14.6.2",
     "@nrwl/workspace": "14.7.3",
     "@nxtensions/astro": "2.3.0",
-    "@tauri-apps/cli": "1.0.5",
+    "@tauri-apps/cli": "1.1.0",
     "@types/node": "18.7.13",
     "@typescript-eslint/eslint-plugin": "5.35.1",
     "@typescript-eslint/parser": "5.35.1",
