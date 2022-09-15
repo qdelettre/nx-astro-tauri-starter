@@ -24,7 +24,7 @@
     "@typescript-eslint/parser": "5.35.1",
     "astro": "1.2.4",
     "cypress": "10.8.0",
-    "eslint": "8.23.0",
+    "eslint": "8.23.1",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-cypress": "2.12.1",
     "nx": "14.7.3",
