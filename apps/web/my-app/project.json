@@ -1,10 +1,11 @@
 {
+  "name": "web-my-app",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/web/my-app/src",
   "targets": {
     "build": {
-      "outputs": ["dist/apps/web/my-app"],
+      "outputs": ["{workspaceRoot}/dist/apps/web/my-app"],
       "executor": "@nxtensions/astro:build",
       "options": {}
     },
@@ -15,8 +16,7 @@
     "preview": {
       "dependsOn": [
         {
-          "target": "build",
-          "projects": "self"
+          "target": "build"
         }
       ],
       "executor": "@nxtensions/astro:preview",
@@ -24,6 +24,13 @@
     },
     "check": {
       "executor": "@nxtensions/astro:check"
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/web/my-app/**/*.{js,ts}"]
+      }
     }
   },
   "tags": []

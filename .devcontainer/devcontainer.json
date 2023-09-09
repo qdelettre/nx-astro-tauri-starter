@@ -10,15 +10,17 @@
   },
 
   // Set *default* container specific settings.json values on container create.
-  "settings": {},
-
   // Add the IDs of extensions you want installed when the container is created.
-  "extensions": [
-    "astro-build.astro-vscode",
-    "tauri-apps.tauri-vscode",
-    "nrwl.angular-console",
-    "dbaeumer.vscode-eslint"
-  ],
+  "customizations":{
+    "vscode": {
+      "extensions":  [
+        "astro-build.astro-vscode",
+        "tauri-apps.tauri-vscode",
+        "nrwl.angular-console",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
