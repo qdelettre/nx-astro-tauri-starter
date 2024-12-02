@@ -29,7 +29,7 @@
     "eslint-plugin-cypress": "2.12.1",
     "nx": "15.0.0",
     "prettier": "2.7.1",
-    "prettier-plugin-astro": "0.7.0",
+    "prettier-plugin-astro": "0.14.1",
     "typescript": "4.9.5"
   }
 }
