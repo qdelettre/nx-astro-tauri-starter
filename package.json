@@ -17,7 +17,7 @@
     "@nrwl/linter": "15.0.0",
     "@nrwl/nx-cloud": "14.6.2",
     "@nrwl/workspace": "15.0.0",
-    "@nxtensions/astro": "3.1.0",
+    "@nxtensions/astro": "3.5.0",
     "@tauri-apps/cli": "1.2.1",
     "@types/node": "18.11.9",
     "@typescript-eslint/eslint-plugin": "5.35.1",
